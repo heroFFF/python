@@ -5,5 +5,5 @@ def hanoi(a,b,c,p):
         hanoi(a,c,b,p[0:-1])
         hanoi(a,b,c,[p[-1]])
         hanoi(b,a,c,p[0:-1])
-p=range(4)
-hanoi("a","b","c",p)
+p=range(1,5)
+hanoi('a','b','c',p)
