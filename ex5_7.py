@@ -1,8 +1,7 @@
-def Febric(n):
-    if n==1 or n==2:
-        return 1
+def hanoi(a,b,c,p):
+    if len(p) == 1:
+        print("圆盘{}:{}-->{}".format( str(p[0]), a, c))
     else:
-        return Febric(n-1) + Febric(n-2)
-
-n = int(input("请输入一个正整数："))
-print("Fabric数列如下：")
+        hanoi(a,c,b,p[0:-1])
+        hanoi(a,b,c,[p[-1]])
+        hanoi(b,a,c,p[0:-1])
