@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Apr 23 11:18:58 2018
-
-@author: Administrator
-"""
-
 def isRepetitive(nList:list):
     nSet = set(nList)
     if len(nList) > len(nSet):
