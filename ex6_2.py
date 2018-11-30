@@ -1,9 +1,3 @@
-"""
-Created on Mon Apr 23 11:18:58 2018
-
-@author: Administrator
-"""
-
 def isRepetitive(nList:list):
    for e in nList:
        if nList.count(e) > 1:
